@@ -6,7 +6,7 @@
 		<title>Instagram Profile Grid</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="normalize.css" />
 		<link rel="stylesheet" href="style.css" />
 	</head>
@@ -100,37 +100,32 @@
 				<button class="button" type="button">Following</button>
 				<button class="button" type="button">Message</button>
 				<button class="button" type="button">Email</button>
-				<button aria-label="Add Profile" type="button">
+				<button class="button" aria-label="Add Profile" type="button">
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-						<path d="M376 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-						<path d="M288 304c-87 0-175.3 48-191.64 138.6-2 10.92 4.21 21.4 15.65 21.4H464c11.44 0 17.62-10.48 15.65-21.4C463.3 352 375 304 288 304z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
-						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M88 176v112M144 232H32" />
+						<path d="M376 144c-3.92 52.87-44 96-88 96s-84.15-43.12-88-96c-4-55 35-96 88-96s92 42 88 96z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" />
+						<path d="M288 304c-87 0-175.3 48-191.64 138.6-2 10.92 4.21 21.4 15.65 21.4H464c11.44 0 17.62-10.48 15.65-21.4C463.3 352 375 304 288 304z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="50" />
+						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="50" d="M88 176v112M144 232H32" />
 					</svg>
 				</button>
 			</div>
 			<div class="button_tabs">
-				<button aria-pressed="true" aria-label="Post Grid" type="button">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-						<rect x="48" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-						<rect x="288" y="48" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-						<rect x="48" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-						<rect x="288" y="288" width="176" height="176" rx="20" ry="20" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-					</svg>
+				<button class="tab_button active" aria-pressed="true" aria-label="Post Grid" type="button">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M204 240H68a36 36 0 01-36-36V68a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36zM444 240H308a36 36 0 01-36-36V68a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36zM204 480H68a36 36 0 01-36-36V308a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36zM444 480H308a36 36 0 01-36-36V308a36 36 0 0136-36h136a36 36 0 0136 36v136a36 36 0 01-36 36z" /></svg>
 				</button>
-				<button aria-label="Reels" type="button">
+				<button class="tab_button" aria-label="Reels" type="button">
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 						<path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 						<path d="M268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
 					</svg>
 				</button>
-				<button aria-label="Remix" type="button">
+				<button class="tab_button" aria-label="Remix" type="button">
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 						<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M320 120l48 48-48 48" />
 						<path d="M352 168H144a80.24 80.24 0 00-80 80v16M192 392l-48-48 48-48" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 						<path d="M160 344h208a80.24 80.24 0 0080-80v-16" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 					</svg>
 				</button>
-				<button aria-label="Tagged" type="button">
+				<button class="tab_button" aria-label="Tagged" type="button">
 					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 						<path d="M258.9 48C141.92 46.42 46.42 141.92 48 258.9c1.56 112.19 92.91 203.54 205.1 205.1 117 1.6 212.48-93.9 210.88-210.88C462.44 140.91 371.09 49.56 258.9 48zm126.42 327.25a4 4 0 01-6.14-.32 124.27 124.27 0 00-32.35-29.59C321.37 329 289.11 320 256 320s-65.37 9-90.83 25.34a124.24 124.24 0 00-32.35 29.58 4 4 0 01-6.14.32A175.32 175.32 0 0180 259c-1.63-97.31 78.22-178.76 175.57-179S432 158.81 432 256a175.32 175.32 0 01-46.68 119.25z" />
 						<path d="M256 144c-19.72 0-37.55 7.39-50.22 20.82s-19 32-17.57 51.93C191.11 256 221.52 288 256 288s64.83-32 67.79-71.24c1.48-19.74-4.8-38.14-17.68-51.82C293.39 151.44 275.59 144 256 144z" />
@@ -154,20 +149,28 @@
 					<figcaption class="access-hidden">Pinned Post</figcaption>
 				</figure>
 				<figure class="figure">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M339 99a83 83 0 10-102 80.8V464l19 32 19-32V179.8A83.28 83.28 0 00339 99zm-59-6a21 21 0 1121-21 21 21 0 01-21 21z" /></svg>
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon video_icon" viewBox="0 0 512 512">
+						<path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						<path d="M268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
+					</svg>
 					<img loading="lazy" src="images/jametlene-reskp-fliwkBbS7oM-unsplash.jpg" alt="Seven Sheltie puppies" />
-					<figcaption class="access-hidden">Pinned Post</figcaption>
+					<figcaption class="access-hidden">Pinned Reel</figcaption>
 				</figure>
 				<figure class="figure">
-					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M339 99a83 83 0 10-102 80.8V464l19 32 19-32V179.8A83.28 83.28 0 00339 99zm-59-6a21 21 0 1121-21 21 21 0 01-21 21z" /></svg>
-					<img loading="lazy" src="images/jametlene-reskp-fliwkBbS7oM-unsplash.jpg" alt="Seven Sheltie puppies" />
-					<figcaption class="access-hidden">Pinned Post</figcaption>
-				</figure>
-				<figure class="figure">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon video_icon" viewBox="0 0 512 512">
+						<path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						<path d="M268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
+					</svg>
 					<img loading="lazy" src="images/leo_visions-n5ojSxRb1Vs-unsplash.jpg" alt="Van life at dusk" />
+					<figcaption class="access-hidden">Pinned Reel</figcaption>
 				</figure>
 				<figure class="figure">
+					<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon video_icon" viewBox="0 0 512 512">
+						<path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+						<path d="M268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
+					</svg>
 					<img loading="lazy" src="images/leo_visions-XAsr6c40MJM-unsplash.jpg" alt="Interior of a van" />
+					<figcaption class="access-hidden">Pinned Reel</figcaption>
 				</figure>
 				<figure class="figure">
 					<img loading="lazy" src="images/mikel-ibarluzea-45lDCN6lVVA-unsplash.jpg" alt="Van that looks like the Mystery Machine" />
@@ -192,24 +195,6 @@
 				</figure>
 				<figure class="figure">
 					<img loading="lazy" src="images/michelle-atkinson-aYgTkQRVUAk-unsplash.jpg" alt="Bumblebee on a peach flower" />
-				</figure>
-				<figure class="figure">
-					<img loading="lazy" src="images/mgg-vitchakorn-E6s3kbC1mo0-unsplash.jpg" alt="A cheese board with grapes, crackers, toast and nuts" />
-				</figure>
-				<figure class="figure">
-					<img loading="lazy" src="images/luann-hunt-O3TlS547j7k-unsplash.jpg" alt="Peaches in a crate in the sunshine" />
-				</figure>
-				<figure class="figure">
-					<img loading="lazy" src="images/kobby-mendez-WXJ33HOrzvE-unsplash.jpg" alt="Stack of donuts with sprinkles" />
-				</figure>
-				<figure class="figure">
-					<img loading="lazy" src="images/jeremy-yap-jn-HaGWe4yw-unsplash.jpg" alt="A wee cup of espresso" />
-				</figure>
-				<figure class="figure">
-					<img loading="lazy" src="images/ibrahim-ozdemir-rRDHlkSyoxY-unsplash.jpg" alt="Bumblebee on a daisy in the golden hour" />
-				</figure>
-				<figure class="figure">
-					<img loading="lazy" src="images/iain-robertson-G46PxOQSdnA-unsplash.jpg" alt="A bunch of eucalyptus" />
 				</figure>
 				<figure class="figure">
 					<img loading="lazy" src="images/heather-barnes-CNDiESvWfrk-unsplash.jpg" alt="Honey dipper in a jar with a slice of lemon" />
@@ -259,34 +244,28 @@
 				<figure class="figure">
 					<img loading="lazy" src="images/aliona-gumeniuk-jeAjT87nbjM-unsplash.jpg" alt="Cheese and red pomegranate seeds" />
 				</figure>
-				<figure class="figure">
-					<img loading="lazy" src="images/alexander-schimmeck-2zJhA9RSkys-unsplash.jpg" alt="Crates of fruit at an open market" />
-				</figure>
 			</div>
 		</main>
 		<footer class="footer">
-			<button aria-label="Home" type="button">
-				<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
-					<path d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-					<path d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
-				</svg>
+			<button class="tab_button" aria-label="Home" type="button">
+				<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M416 174.74V48h-80v58.45L256 32 0 272h64v208h144V320h96v160h144V272h64l-96-97.26z" /></svg>
 			</button>
-			<button aria-label="Search" type="button">
+			<button class="tab_button" aria-label="Search" type="button">
 				<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M456.69 421.39L362.6 327.3a173.81 173.81 0 0034.84-104.58C397.44 126.38 319.06 48 222.72 48S48 126.38 48 222.72s78.38 174.72 174.72 174.72A173.81 173.81 0 00327.3 362.6l94.09 94.09a25 25 0 0035.3-35.3zM97.92 222.72a124.8 124.8 0 11124.8 124.8 124.95 124.95 0 01-124.8-124.8z" /></svg>
 			</button>
-			<button aria-label="Add Content" type="button">
+			<button class="tab_button" aria-label="Add Content" type="button">
 				<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 					<path d="M448 256c0-106-86-192-192-192S64 150 64 256s86 192 192 192 192-86 192-192z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
 					<path fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M256 176v160M336 256H176" />
 				</svg>
 			</button>
-			<button aria-label="Reels" type="button">
+			<button class="tab_button" aria-label="Reels" type="button">
 				<svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
 					<path d="M374.79 308.78L457.5 367a16 16 0 0022.5-14.62V159.62A16 16 0 00457.5 145l-82.71 58.22A16 16 0 00368 216.3v79.4a16 16 0 006.79 13.08z" fill="none" stroke="" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
 					<path d="M268 384H84a52.15 52.15 0 01-52-52V180a52.15 52.15 0 0152-52h184.48A51.68 51.68 0 01320 179.52V332a52.15 52.15 0 01-52 52z" fill="none" stroke="" stroke-miterlimit="10" stroke-width="32" />
 				</svg>
 			</button>
-			<button aria-label="Current User Profile" type="button">
+			<button class="tab_button" aria-label="Current User Profile" type="button">
 				<figure class="figure">
 					<img src="heidisheltie.jpg" alt="Heidi the Sheltie Profile" />
 				</figure>
