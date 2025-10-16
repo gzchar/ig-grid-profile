@@ -94,7 +94,7 @@ button {
 	/* padding: 0.65rem 1.25rem; */
 	padding-top: 0.65rem;
 	padding-bottom: 0.65rem;
-	background-color: var(--lt-gray);
+	background-color: rgba(rgb(46, 113, 180), green, blue, alpha);
 	font-weight: 600;
 	line-height: 1;
 	color: var(--charcoal);
@@ -102,8 +102,8 @@ button {
 }
 
 .button svg {
-	width: 0.85rem;
-	height: auto;
+	width: auto;
+	height: 0.85rem;
 }
 
 .icon_button {
