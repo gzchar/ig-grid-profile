@@ -15,12 +15,12 @@ document.addEventListener('DOMContentLoaded', () => {
   function openAt(index) {
     const fig = figures[index];
     const img = fig.querySelector('img');
-    const cap = fig.querySelector('figcaption')?.textContent || img.alt || '';
+    const capHtml = fig.querySelector('figcaption')?.innerHTML || img.alt || '';
     if (!img) return;
     current = index;
     lbImage.src = img.src;
     lbImage.alt = img.alt || '';
-    lbCaption.textContent = cap;
+    lbCaption.innerHTML = capHtml;
     lb.setAttribute('aria-hidden', 'false');
     lb.querySelector('.lightbox-inner').dataset.index = index;
     document.body.style.overflow = 'hidden';
