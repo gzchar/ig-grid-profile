@@ -442,6 +442,7 @@ button {
 .lightbox[aria-hidden="false"] { display: flex; }
 
 .lightbox-inner {
+  /* keep existing sizing but ensure padding/box-sizing so caption fits */
   position: relative;
   max-width: 92vw;
   max-height: 92vh;
@@ -450,6 +451,8 @@ button {
   align-items: center;
   justify-content: center;
   gap: 1rem;
+  box-sizing: border-box;
+  padding: 1rem;
 }
 
 .lightbox-content {
@@ -458,13 +461,14 @@ button {
   flex-direction: column;
   align-items: center;
   gap: 0.5rem;
-  max-height: 92vh;
+  max-height: calc(92vh - 2rem); /* ensure content fits inside viewport */
   overflow: hidden;
 }
 
 .lightbox-content img {
   max-width: 100%;
-  max-height: calc(92vh - 120px);
+  /* leave vertical room for caption by limiting image height */
+  max-height: calc(70vh - 40px);
   object-fit: contain;
   border-radius: 6px;
   background: #111;
@@ -473,11 +477,20 @@ button {
 .lightbox-caption {
   color: #fff;
   font-size: 14px;
-  text-align: center;
-  padding: 0 0.5rem;
-  line-height: 1.3;
-  opacity: 0.95;
+  text-align: left;
+  padding: 0.5rem 0.5rem;
+  line-height: 1.4;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: pre-wrap;               /* respect line breaks */
+  max-height: calc(22vh - 40px);       /* cap height so it won't overflow viewport */
+  overflow-y: auto;                    /* allow scrolling when long */
+  -webkit-overflow-scrolling: touch;
 }
+
+/* subtle scrollbar styling (optional) */
+.lightbox-caption::-webkit-scrollbar { width: 8px; }
+.lightbox-caption::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 4px; }
 
 /* controls */
 .lightbox-close {
