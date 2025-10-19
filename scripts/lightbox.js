@@ -1,6 +1,6 @@
-// ...new file...
 document.addEventListener('DOMContentLoaded', () => {
-  const figures = Array.from(document.querySelectorAll('.post_grid .figure'));
+  // only target the first five posts
+  const figures = Array.from(document.querySelectorAll('.post_grid .figure:nth-child(-n+5)'));
   if (!figures.length) return;
 
   const lb = document.getElementById('lightbox');
@@ -39,16 +39,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   figures.forEach((fig, i) => {
     fig.addEventListener('click', (e) => {
-      // ignore clicks on buttons inside figure if any
       if (e.target.closest('button')) return;
       openAt(i);
     });
   });
 
   lbClose.addEventListener('click', close);
-  lb.addEventListener('click', (e) => {
-    if (e.target === lb) close(); // click on backdrop
-  });
+  lb.addEventListener('click', (e) => { if (e.target === lb) close(); });
   lbPrev.addEventListener('click', () => showNext(-1));
   lbNext.addEventListener('click', () => showNext(1));
 
