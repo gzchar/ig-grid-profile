@@ -202,5 +202,20 @@
                 </figure>
             </div>
         </main>
+
+        <!-- Lightbox modal (add) -->
+        <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Post preview">
+          <div class="lightbox-inner" data-index="">
+            <button class="lightbox-close" id="lbClose" aria-label="Close">✕</button>
+            <button class="lightbox-nav lightbox-prev" id="lbPrev" aria-label="Previous">‹</button>
+            <div class="lightbox-content">
+              <img id="lbImage" alt="" />
+              <div class="lightbox-caption" id="lbCaption"></div>
+            </div>
+            <button class="lightbox-nav lightbox-next" id="lbNext" aria-label="Next">›</button>
+          </div>
+        </div>
+
+        <script src="scripts/lightbox.js" defer></script>
     </body>
 </html>
